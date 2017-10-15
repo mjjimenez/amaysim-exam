@@ -13,7 +13,7 @@ struct AccountDocument {
 
     var service: Service?
     var subscription: Subscription?
-    var product: [Product] = []
+    var product: Product?
 
 
     enum CodingKeys: String, CodingKey {
@@ -36,7 +36,7 @@ extension AccountDocument: Decodable {
         while !includedResourceArray.isAtEnd {
 
             if let product = try? includedResourceArray.decode(Product.self) {
-                self.product.append(product)
+                self.product = product
             }
 
             if let service = try? includedResourceArray.decode(Service.self) {
