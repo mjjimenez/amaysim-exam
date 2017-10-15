@@ -21,6 +21,7 @@ class AppCoordinator: Coordinator {
 
     lazy var loginViewController = self.createLoginViewController()
     lazy var splashScreenViewController = self.createSplashScreenViewController()
+    lazy var accountViewController = self.createAccountViewController()
 
     var accountDocument: AccountDocument?
 
@@ -62,7 +63,18 @@ class AppCoordinator: Coordinator {
     func createSplashScreenViewController() -> SplashScreenViewController {
         let splashScreenViewController = self.storyboard.instantiateViewController(withIdentifier: "Splash") as! SplashScreenViewController
         splashScreenViewController.splashViewModel = SplashViewModel(account: self.accountDocument!.accountResource)
+        splashScreenViewController.modalTransitionStyle = .crossDissolve
+        splashScreenViewController.finishedPresentingSplash = { [weak self] in
+            if let strongSelf = self {
+                strongSelf.splashScreenViewController.present(strongSelf.accountViewController, animated: true, completion: nil)
+            }
+        }
         return splashScreenViewController
+    }
+
+    func createAccountViewController() -> AccountViewController {
+        let accountViewController = self.storyboard.instantiateViewController(withIdentifier: "Account") as! AccountViewController
+        return accountViewController
     }
 
 }

@@ -10,6 +10,8 @@ import UIKit
 
 class SplashScreenViewController: UIViewController {
 
+    var finishedPresentingSplash: (() -> ())?
+
     @IBOutlet weak var welcomeLabel: UILabel!
 
     var splashViewModel: SplashViewModel!
@@ -20,6 +22,17 @@ class SplashScreenViewController: UIViewController {
         self.welcomeLabel.text = splashViewModel.welcomeGreeting
 
         // Do any additional setup after loading the view.
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+
+            self.finishedPresentingSplash?()
+
+        }
+
     }
 
     override func didReceiveMemoryWarning() {
