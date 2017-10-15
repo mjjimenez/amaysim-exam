@@ -21,7 +21,7 @@ class LoginPresenter: LoginEventHandlerInterface, LoginInteractorOutputInterface
     func receivedLoginResult(_ result: Result<AccountDocument>) {
         switch result {
         case .success(let accountDocument):
-            print(accountDocument)
+            self.loginPresenterOutput?.successfullyLoggedIn(with: accountDocument)
         case .failure(let error):
             if let error = error as? ErrorAlertPresentable {
                 self.loginPresenterOutput?.presentErrorAlert(alert: UIAlertController.makeAlertController(from: error))

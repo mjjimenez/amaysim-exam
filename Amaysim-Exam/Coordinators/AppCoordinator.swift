@@ -29,7 +29,18 @@ class AppCoordinator: Coordinator {
     }
 
     func createLoginViewController() -> LoginViewController {
-        return self.storyboard.instantiateViewController(withIdentifier: "Login") as! LoginViewController
+        let loginViewController =  self.storyboard.instantiateViewController(withIdentifier: "Login") as! LoginViewController
+
+        let loginPresenter = LoginPresenter()
+        let loginInteractor = LoginInteractor()
+
+        loginViewController.loginEventHandler = loginPresenter
+        loginPresenter.loginPresenterOutput = loginViewController
+        loginPresenter.loginInteractor = loginInteractor
+        loginInteractor.loginInteractorOutput = loginPresenter
+
+        return loginViewController
+
     }
 
 }

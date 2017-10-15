@@ -8,7 +8,11 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, LoginPresenterOutputInterface {
+
+    var navigateToMainAccount: ((AccountDocument) -> ())?
+
+    var loginEventHandler: LoginEventHandlerInterface!
 
     @IBOutlet weak var msnTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -20,6 +24,20 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func tappedLogin(_ sender: Any) {
+        if let mobileSerialNumber = msnTextField.text,
+            let passwordText = passwordTextField.text {
 
+            self.loginEventHandler.didLogin(withMSN: mobileSerialNumber, password: passwordText)
+
+        }
     }
+
+    func successfullyLoggedIn(with accountDocument: AccountDocument) {
+        navigateToMainAccount?(accountDocument)
+    }
+
+    func presentErrorAlert(alert: UIAlertController) {
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 }

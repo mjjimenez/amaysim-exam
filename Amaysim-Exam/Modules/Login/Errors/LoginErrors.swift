@@ -22,7 +22,7 @@ extension LoginError: ErrorAlertPresentable {
     var message: String {
         switch self {
         case .invalidMSN:
-            return "Could not find a record of your mobile serial number"
+            return "Could not find a record of your mobile serial number. Please try again with the correct MSN."
         case .incompleteLoginFields:
             return "Please complete all fields."
         case .resourceLoadingError:

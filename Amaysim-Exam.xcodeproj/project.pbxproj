@@ -24,6 +24,8 @@
 		BE3AAF1F1F937F3500D50B9D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AAF1D1F937F3500D50B9D /* Extensions.swift */; };
 		BE3AAF221F9383ED00D50B9D /* LoginErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AAF211F9383ED00D50B9D /* LoginErrors.swift */; };
 		BE3AAF231F9383ED00D50B9D /* LoginErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AAF211F9383ED00D50B9D /* LoginErrors.swift */; };
+		BE3AAF241F93987500D50B9D /* collection.json in Resources */ = {isa = PBXBuildFile; fileRef = BE57F95F1F9363990052DD0E /* collection.json */; };
+		BE3AAF251F93987600D50B9D /* collection.json in Resources */ = {isa = PBXBuildFile; fileRef = BE57F95F1F9363990052DD0E /* collection.json */; };
 		BE57F9621F9364260052DD0E /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F9611F9364260052DD0E /* Account.swift */; };
 		BE57F9631F9364260052DD0E /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F9611F9364260052DD0E /* Account.swift */; };
 		BE57F9651F9364520052DD0E /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F9641F9364520052DD0E /* Service.swift */; };
@@ -128,6 +130,7 @@
 				BE0131FE1F9231F800F9019B /* Main.storyboard */,
 				BE0132011F9231F800F9019B /* Assets.xcassets */,
 				BE0132031F9231F800F9019B /* LaunchScreen.storyboard */,
+				BE57F95F1F9363990052DD0E /* collection.json */,
 				BE0132061F9231F800F9019B /* Info.plist */,
 			);
 			path = "Amaysim-Exam";
@@ -191,7 +194,6 @@
 		BE57F95E1F93621A0052DD0E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				BE57F95F1F9363990052DD0E /* collection.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -326,6 +328,7 @@
 				BE0132051F9231F800F9019B /* LaunchScreen.storyboard in Resources */,
 				BE0132021F9231F800F9019B /* Assets.xcassets in Resources */,
 				BE0132001F9231F800F9019B /* Main.storyboard in Resources */,
+				BE3AAF241F93987500D50B9D /* collection.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE57F98E1F936E0A0052DD0E /* Main.storyboard in Resources */,
+				BE3AAF251F93987600D50B9D /* collection.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

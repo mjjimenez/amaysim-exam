@@ -9,12 +9,13 @@
 import Foundation
 import UIKit
 
-protocol LoginEventHandlerInterface {
+protocol LoginEventHandlerInterface: class {
     func didLogin(withMSN mobileSerialNumber: String, password: String)
 }
 
 protocol LoginPresenterOutputInterface: class {
     func presentErrorAlert(alert: UIAlertController)
+    func successfullyLoggedIn(with accountDocument: AccountDocument)
 }
 
 protocol LoginInteractorInterface {

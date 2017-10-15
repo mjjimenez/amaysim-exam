@@ -14,7 +14,7 @@ class LoginInteractor: LoginInteractorInterface {
 
     func login(withMSN mobileSerialNumber: String, password: String) {
 
-        if mobileSerialNumber.count == 0 || password.count == 0 {
+        if mobileSerialNumber.isEmpty || password.isEmpty {
             self.loginInteractorOutput?.receivedLoginResult(.failure(LoginError.incompleteLoginFields))
         } else {
 
@@ -35,8 +35,9 @@ class LoginInteractor: LoginInteractorInterface {
 
                 }
 
+            } else {
+                self.loginInteractorOutput?.receivedLoginResult(.failure(LoginError.resourceLoadingError))
             }
-
         }
 
     }

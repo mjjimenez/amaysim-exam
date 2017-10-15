@@ -11,6 +11,13 @@ import UIKit
 
 extension UIAlertController {
     static func makeAlertController(from error: ErrorAlertPresentable) -> UIAlertController {
-        return UIAlertController(title: error.title, message: error.message, preferredStyle: .alert)
+
+        let dismissAlertAction = UIAlertAction(title: "Ok", style: .cancel)
+        let alertController = UIAlertController(title: error.title, message: error.message, preferredStyle: .alert)
+
+        alertController.addAction(dismissAlertAction)
+
+        return alertController
+
     }
 }
