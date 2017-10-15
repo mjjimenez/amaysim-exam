@@ -26,6 +26,10 @@
 		BE3AAF231F9383ED00D50B9D /* LoginErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AAF211F9383ED00D50B9D /* LoginErrors.swift */; };
 		BE3AAF241F93987500D50B9D /* collection.json in Resources */ = {isa = PBXBuildFile; fileRef = BE57F95F1F9363990052DD0E /* collection.json */; };
 		BE3AAF251F93987600D50B9D /* collection.json in Resources */ = {isa = PBXBuildFile; fileRef = BE57F95F1F9363990052DD0E /* collection.json */; };
+		BE3AAF471F939FD600D50B9D /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AAF461F939FD600D50B9D /* SplashScreenViewController.swift */; };
+		BE3AAF481F939FD600D50B9D /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AAF461F939FD600D50B9D /* SplashScreenViewController.swift */; };
+		BE3AAF4B1F93A0FC00D50B9D /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AAF4A1F93A0FC00D50B9D /* SplashViewModel.swift */; };
+		BE3AAF4C1F93A0FC00D50B9D /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AAF4A1F93A0FC00D50B9D /* SplashViewModel.swift */; };
 		BE57F9621F9364260052DD0E /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F9611F9364260052DD0E /* Account.swift */; };
 		BE57F9631F9364260052DD0E /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F9611F9364260052DD0E /* Account.swift */; };
 		BE57F9651F9364520052DD0E /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F9641F9364520052DD0E /* Service.swift */; };
@@ -71,6 +75,8 @@
 		BE3AAF191F937E7F00D50B9D /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		BE3AAF1D1F937F3500D50B9D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BE3AAF211F9383ED00D50B9D /* LoginErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginErrors.swift; sourceTree = "<group>"; };
+		BE3AAF461F939FD600D50B9D /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		BE3AAF4A1F93A0FC00D50B9D /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
 		BE57F95F1F9363990052DD0E /* collection.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = collection.json; sourceTree = "<group>"; };
 		BE57F9611F9364260052DD0E /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		BE57F9641F9364520052DD0E /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
@@ -191,6 +197,31 @@
 			path = Errors;
 			sourceTree = "<group>";
 		};
+		BE3AAF441F939FA800D50B9D /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				BE3AAF451F939FB900D50B9D /* View */,
+				BE3AAF491F93A0D800D50B9D /* View Model */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		BE3AAF451F939FB900D50B9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE3AAF461F939FD600D50B9D /* SplashScreenViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BE3AAF491F93A0D800D50B9D /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				BE3AAF4A1F93A0FC00D50B9D /* SplashViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
 		BE57F95E1F93621A0052DD0E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				BE3AAF1C1F937ECC00D50B9D /* Login */,
+				BE3AAF441F939FA800D50B9D /* Splash */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -358,6 +390,8 @@
 				BE57F9961F9372A30052DD0E /* AppCoordinator.swift in Sources */,
 				BE3AAF0C1F937B8D00D50B9D /* Result.swift in Sources */,
 				BE3AAF1A1F937E7F00D50B9D /* Protocols.swift in Sources */,
+				BE3AAF471F939FD600D50B9D /* SplashScreenViewController.swift in Sources */,
+				BE3AAF4B1F93A0FC00D50B9D /* SplashViewModel.swift in Sources */,
 				BE57F9621F9364260052DD0E /* Account.swift in Sources */,
 				BE57F9681F93646C0052DD0E /* Subscription.swift in Sources */,
 				BE57F96B1F93649A0052DD0E /* Product.swift in Sources */,
@@ -380,6 +414,8 @@
 				BE57F9971F9372A30052DD0E /* AppCoordinator.swift in Sources */,
 				BE3AAF0D1F937B8D00D50B9D /* Result.swift in Sources */,
 				BE3AAF1B1F937E7F00D50B9D /* Protocols.swift in Sources */,
+				BE3AAF481F939FD600D50B9D /* SplashScreenViewController.swift in Sources */,
+				BE3AAF4C1F93A0FC00D50B9D /* SplashViewModel.swift in Sources */,
 				BE57F9691F93646C0052DD0E /* Subscription.swift in Sources */,
 				BE57F96F1F9364B30052DD0E /* AccountDocument.swift in Sources */,
 				BE57F9661F9364520052DD0E /* Service.swift in Sources */,
@@ -532,6 +568,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L937FJ9Y4F;
 				INFOPLIST_FILE = "Amaysim-Exam/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.markjimenez.Amaysim-Exam";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -547,6 +584,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L937FJ9Y4F;
 				INFOPLIST_FILE = "Amaysim-Exam/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.markjimenez.Amaysim-Exam";
 				PRODUCT_NAME = "$(TARGET_NAME)";

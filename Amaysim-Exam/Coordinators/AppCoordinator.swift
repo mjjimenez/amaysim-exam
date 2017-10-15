@@ -19,12 +19,17 @@ class AppCoordinator: Coordinator {
     let window: UIWindow
     let storyboard = UIStoryboard(name: "Main", bundle: nil)
 
+    lazy var loginViewController = self.createLoginViewController()
+    lazy var splashScreenViewController = self.createSplashScreenViewController()
+
+    var accountDocument: AccountDocument?
+
     init(window: UIWindow) {
         self.window = window
     }
 
     func start() {
-        self.window.rootViewController = self.createLoginViewController()
+        self.window.rootViewController = loginViewController
         self.window.makeKeyAndVisible()
     }
 
@@ -39,8 +44,25 @@ class AppCoordinator: Coordinator {
         loginPresenter.loginInteractor = loginInteractor
         loginInteractor.loginInteractorOutput = loginPresenter
 
+        loginViewController.didLoginWithAccount = { [weak self] accountDocument in
+
+            if let strongSelf = self {
+
+                strongSelf.accountDocument = accountDocument
+                strongSelf.loginViewController.present(strongSelf.splashScreenViewController, animated: true, completion: nil)
+
+            }
+
+        }
+
         return loginViewController
 
+    }
+
+    func createSplashScreenViewController() -> SplashScreenViewController {
+        let splashScreenViewController = self.storyboard.instantiateViewController(withIdentifier: "Splash") as! SplashScreenViewController
+        splashScreenViewController.splashViewModel = SplashViewModel(account: self.accountDocument!.accountResource)
+        return splashScreenViewController
     }
 
 }

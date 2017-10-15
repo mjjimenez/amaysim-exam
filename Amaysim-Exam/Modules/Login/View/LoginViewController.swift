@@ -10,7 +10,7 @@ import UIKit
 
 class LoginViewController: UIViewController, LoginPresenterOutputInterface {
 
-    var navigateToMainAccount: ((AccountDocument) -> ())?
+    var didLoginWithAccount: ((AccountDocument) -> ())?
 
     var loginEventHandler: LoginEventHandlerInterface!
 
@@ -33,7 +33,7 @@ class LoginViewController: UIViewController, LoginPresenterOutputInterface {
     }
 
     func successfullyLoggedIn(with accountDocument: AccountDocument) {
-        navigateToMainAccount?(accountDocument)
+        didLoginWithAccount?(accountDocument)
     }
 
     func presentErrorAlert(alert: UIAlertController) {

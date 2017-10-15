@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Serial Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kKp-OQ-50q">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0468874507" borderStyle="roundedRect" placeholder="Mobile Serial Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kKp-OQ-50q">
                                 <rect key="frame" x="56" y="268.5" width="263" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="A7L-RI-dNK"/>
@@ -81,5 +81,49 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="Beo-p6-ZMJ">
+            <objects>
+                <viewController storyboardIdentifier="Splash" id="LNF-R7-ckQ" customClass="SplashScreenViewController" customModule="Amaysim_Exam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7zs-As-bh8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="amaysim-logo" translatesAutoresizingMaskIntoConstraints="NO" id="bTP-gf-7DS">
+                                <rect key="frame" x="1" y="243.5" width="373" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="APY-gq-hAB"/>
+                                    <constraint firstAttribute="width" constant="373" id="bZ8-Lg-DJL"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DfV-d5-Jil">
+                                <rect key="frame" x="0.0" y="371" width="375" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bTP-gf-7DS" firstAttribute="centerX" secondItem="7zs-As-bh8" secondAttribute="centerX" id="2Fz-pA-QIn"/>
+                            <constraint firstItem="DfV-d5-Jil" firstAttribute="centerY" secondItem="7zs-As-bh8" secondAttribute="centerY" constant="50" id="Ods-ee-K3H"/>
+                            <constraint firstItem="Dpd-DZ-hPy" firstAttribute="trailing" secondItem="DfV-d5-Jil" secondAttribute="trailing" id="dIy-db-Bdx"/>
+                            <constraint firstItem="DfV-d5-Jil" firstAttribute="leading" secondItem="Dpd-DZ-hPy" secondAttribute="leading" id="ghz-x8-voc"/>
+                            <constraint firstItem="bTP-gf-7DS" firstAttribute="centerY" secondItem="7zs-As-bh8" secondAttribute="centerY" constant="-50" id="l6T-l3-kTY"/>
+                            <constraint firstItem="DfV-d5-Jil" firstAttribute="centerX" secondItem="7zs-As-bh8" secondAttribute="centerX" id="m5x-VQ-LWB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Dpd-DZ-hPy"/>
+                    </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="DfV-d5-Jil" id="buR-6N-ZsL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5x9-qh-p4R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="799.20000000000005" y="133.5832083958021"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="amaysim-logo" width="373" height="80"/>
+    </resources>
 </document>
