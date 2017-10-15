@@ -11,7 +11,6 @@
 		BE0132001F9231F800F9019B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0131FE1F9231F800F9019B /* Main.storyboard */; };
 		BE0132021F9231F800F9019B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE0132011F9231F800F9019B /* Assets.xcassets */; };
 		BE0132051F9231F800F9019B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0132031F9231F800F9019B /* LaunchScreen.storyboard */; };
-		BE0132101F9231F800F9019B /* Amaysim_ExamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01320F1F9231F800F9019B /* Amaysim_ExamTests.swift */; };
 		BE3AAF0C1F937B8D00D50B9D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AAF0B1F937B8D00D50B9D /* Result.swift */; };
 		BE3AAF0D1F937B8D00D50B9D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AAF0B1F937B8D00D50B9D /* Result.swift */; };
 		BE3AAF131F937C6900D50B9D /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3AAF121F937C6900D50B9D /* LoginInteractor.swift */; };
@@ -49,6 +48,11 @@
 		BE57F99B1F9377AF0052DD0E /* LoginModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F9991F9377AF0052DD0E /* LoginModuleInterface.swift */; };
 		BEB504C81F93ABE10005D3C3 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB504C71F93ABE10005D3C3 /* AccountViewController.swift */; };
 		BEB504CB1F93B5A30005D3C3 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB504CA1F93B5A30005D3C3 /* AccountViewModel.swift */; };
+		BEB504CD1F93C2480005D3C3 /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB504CC1F93C2480005D3C3 /* LoginInteractorTests.swift */; };
+		BEB504D01F93C2CC0005D3C3 /* LoginMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB504CF1F93C2CC0005D3C3 /* LoginMocks.swift */; };
+		BEB504D11F93C4490005D3C3 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB504CA1F93B5A30005D3C3 /* AccountViewModel.swift */; };
+		BEB504D21F93C44C0005D3C3 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB504C71F93ABE10005D3C3 /* AccountViewController.swift */; };
+		BEB504D41F93C5850005D3C3 /* SplashViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB504D31F93C5850005D3C3 /* SplashViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +73,6 @@
 		BE0132041F9231F800F9019B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE0132061F9231F800F9019B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE01320B1F9231F800F9019B /* Amaysim-ExamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Amaysim-ExamTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE01320F1F9231F800F9019B /* Amaysim_ExamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amaysim_ExamTests.swift; sourceTree = "<group>"; };
 		BE0132111F9231F800F9019B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE3AAF0B1F937B8D00D50B9D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		BE3AAF121F937C6900D50B9D /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
@@ -90,6 +93,9 @@
 		BE57F9991F9377AF0052DD0E /* LoginModuleInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModuleInterface.swift; sourceTree = "<group>"; };
 		BEB504C71F93ABE10005D3C3 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		BEB504CA1F93B5A30005D3C3 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		BEB504CC1F93C2480005D3C3 /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
+		BEB504CF1F93C2CC0005D3C3 /* LoginMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMocks.swift; sourceTree = "<group>"; };
+		BEB504D31F93C5850005D3C3 /* SplashViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,8 +155,10 @@
 		BE01320E1F9231F800F9019B /* Amaysim-ExamTests */ = {
 			isa = PBXGroup;
 			children = (
-				BE01320F1F9231F800F9019B /* Amaysim_ExamTests.swift */,
+				BEB504CE1F93C2B70005D3C3 /* Mocks */,
 				BE0132111F9231F800F9019B /* Info.plist */,
+				BEB504CC1F93C2480005D3C3 /* LoginInteractorTests.swift */,
+				BEB504D31F93C5850005D3C3 /* SplashViewModelTests.swift */,
 			);
 			path = "Amaysim-ExamTests";
 			sourceTree = "<group>";
@@ -304,6 +312,14 @@
 			path = "View Model";
 			sourceTree = "<group>";
 		};
+		BEB504CE1F93C2B70005D3C3 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				BEB504CF1F93C2CC0005D3C3 /* LoginMocks.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -440,17 +456,21 @@
 				BE57F99B1F9377AF0052DD0E /* LoginModuleInterface.swift in Sources */,
 				BE3AAF141F937C6900D50B9D /* LoginInteractor.swift in Sources */,
 				BE57F9931F9371D10052DD0E /* LoginViewController.swift in Sources */,
-				BE0132101F9231F800F9019B /* Amaysim_ExamTests.swift in Sources */,
 				BE57F9631F9364260052DD0E /* Account.swift in Sources */,
 				BE57F96C1F93649A0052DD0E /* Product.swift in Sources */,
+				BEB504D21F93C44C0005D3C3 /* AccountViewController.swift in Sources */,
 				BE57F9971F9372A30052DD0E /* AppCoordinator.swift in Sources */,
 				BE3AAF0D1F937B8D00D50B9D /* Result.swift in Sources */,
 				BE3AAF1B1F937E7F00D50B9D /* Protocols.swift in Sources */,
 				BE3AAF481F939FD600D50B9D /* SplashScreenViewController.swift in Sources */,
+				BEB504D11F93C4490005D3C3 /* AccountViewModel.swift in Sources */,
 				BE3AAF4C1F93A0FC00D50B9D /* SplashViewModel.swift in Sources */,
+				BEB504D01F93C2CC0005D3C3 /* LoginMocks.swift in Sources */,
 				BE57F9691F93646C0052DD0E /* Subscription.swift in Sources */,
 				BE57F96F1F9364B30052DD0E /* AccountDocument.swift in Sources */,
 				BE57F9661F9364520052DD0E /* Service.swift in Sources */,
+				BEB504CD1F93C2480005D3C3 /* LoginInteractorTests.swift in Sources */,
+				BEB504D41F93C5850005D3C3 /* SplashViewModelTests.swift in Sources */,
 				BE3AAF231F9383ED00D50B9D /* LoginErrors.swift in Sources */,
 				BE3AAF1F1F937F3500D50B9D /* Extensions.swift in Sources */,
 			);
