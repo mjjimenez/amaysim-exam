@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BE0131FB1F9231F800F9019B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0131FA1F9231F800F9019B /* AppDelegate.swift */; };
-		BE0131FD1F9231F800F9019B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0131FC1F9231F800F9019B /* ViewController.swift */; };
 		BE0132001F9231F800F9019B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0131FE1F9231F800F9019B /* Main.storyboard */; };
 		BE0132021F9231F800F9019B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE0132011F9231F800F9019B /* Assets.xcassets */; };
 		BE0132051F9231F800F9019B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0132031F9231F800F9019B /* LaunchScreen.storyboard */; };
@@ -23,6 +22,11 @@
 		BE57F96C1F93649A0052DD0E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F96A1F93649A0052DD0E /* Product.swift */; };
 		BE57F96E1F9364B30052DD0E /* AccountDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F96D1F9364B30052DD0E /* AccountDocument.swift */; };
 		BE57F96F1F9364B30052DD0E /* AccountDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F96D1F9364B30052DD0E /* AccountDocument.swift */; };
+		BE57F98E1F936E0A0052DD0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0131FE1F9231F800F9019B /* Main.storyboard */; };
+		BE57F9921F9371D10052DD0E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F9911F9371D10052DD0E /* LoginViewController.swift */; };
+		BE57F9931F9371D10052DD0E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F9911F9371D10052DD0E /* LoginViewController.swift */; };
+		BE57F9961F9372A30052DD0E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F9951F9372A30052DD0E /* AppCoordinator.swift */; };
+		BE57F9971F9372A30052DD0E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F9951F9372A30052DD0E /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,6 @@
 /* Begin PBXFileReference section */
 		BE0131F71F9231F800F9019B /* Amaysim-Exam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Amaysim-Exam.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE0131FA1F9231F800F9019B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BE0131FC1F9231F800F9019B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BE0131FF1F9231F800F9019B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BE0132011F9231F800F9019B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE0132041F9231F800F9019B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +55,8 @@
 		BE57F9671F93646C0052DD0E /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
 		BE57F96A1F93649A0052DD0E /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		BE57F96D1F9364B30052DD0E /* AccountDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDocument.swift; sourceTree = "<group>"; };
+		BE57F9911F9371D10052DD0E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BE57F9951F9372A30052DD0E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				BE0131FA1F9231F800F9019B /* AppDelegate.swift */,
-				BE0131FC1F9231F800F9019B /* ViewController.swift */,
+				BE57F9941F93727E0052DD0E /* Coordinators */,
 				BE57F9601F9363E20052DD0E /* Models */,
+				BE57F98F1F9370CE0052DD0E /* Modules */,
 				BE57F95E1F93621A0052DD0E /* Resources */,
 				BE0131FE1F9231F800F9019B /* Main.storyboard */,
 				BE0132011F9231F800F9019B /* Assets.xcassets */,
@@ -132,6 +138,30 @@
 				BE57F96D1F9364B30052DD0E /* AccountDocument.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BE57F98F1F9370CE0052DD0E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BE57F9901F93716B0052DD0E /* View */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		BE57F9901F93716B0052DD0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE57F9911F9371D10052DD0E /* LoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BE57F9941F93727E0052DD0E /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				BE57F9951F9372A30052DD0E /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE57F98E1F936E0A0052DD0E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,10 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE0131FD1F9231F800F9019B /* ViewController.swift in Sources */,
+				BE57F9921F9371D10052DD0E /* LoginViewController.swift in Sources */,
 				BE57F96E1F9364B30052DD0E /* AccountDocument.swift in Sources */,
 				BE57F9651F9364520052DD0E /* Service.swift in Sources */,
 				BE0131FB1F9231F800F9019B /* AppDelegate.swift in Sources */,
+				BE57F9961F9372A30052DD0E /* AppCoordinator.swift in Sources */,
 				BE57F9621F9364260052DD0E /* Account.swift in Sources */,
 				BE57F9681F93646C0052DD0E /* Subscription.swift in Sources */,
 				BE57F96B1F93649A0052DD0E /* Product.swift in Sources */,
@@ -251,9 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE57F9931F9371D10052DD0E /* LoginViewController.swift in Sources */,
 				BE0132101F9231F800F9019B /* Amaysim_ExamTests.swift in Sources */,
 				BE57F9631F9364260052DD0E /* Account.swift in Sources */,
 				BE57F96C1F93649A0052DD0E /* Product.swift in Sources */,
+				BE57F9971F9372A30052DD0E /* AppCoordinator.swift in Sources */,
 				BE57F9691F93646C0052DD0E /* Subscription.swift in Sources */,
 				BE57F96F1F9364B30052DD0E /* AccountDocument.swift in Sources */,
 				BE57F9661F9364520052DD0E /* Service.swift in Sources */,
