@@ -42,7 +42,7 @@ class AccountViewModel {
     var productPriceText: String {
         if let productPriceInCents = self.accountDocument.product?.price {
             let productPriceInDollars = (productPriceInCents/100)
-            return "Price: $ \(productPriceInDollars)"
+            return String(format: "Price: $ %.2f", productPriceInDollars)
         } else {
             return "Price unavailable"
         }

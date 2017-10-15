@@ -53,6 +53,7 @@
 		BEB504D11F93C4490005D3C3 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB504CA1F93B5A30005D3C3 /* AccountViewModel.swift */; };
 		BEB504D21F93C44C0005D3C3 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB504C71F93ABE10005D3C3 /* AccountViewController.swift */; };
 		BEB504D41F93C5850005D3C3 /* SplashViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB504D31F93C5850005D3C3 /* SplashViewModelTests.swift */; };
+		BEB504D61F93C6A40005D3C3 /* AccountViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB504D51F93C6A40005D3C3 /* AccountViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		BEB504CC1F93C2480005D3C3 /* LoginInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
 		BEB504CF1F93C2CC0005D3C3 /* LoginMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMocks.swift; sourceTree = "<group>"; };
 		BEB504D31F93C5850005D3C3 /* SplashViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModelTests.swift; sourceTree = "<group>"; };
+		BEB504D51F93C6A40005D3C3 /* AccountViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 				BE0132111F9231F800F9019B /* Info.plist */,
 				BEB504CC1F93C2480005D3C3 /* LoginInteractorTests.swift */,
 				BEB504D31F93C5850005D3C3 /* SplashViewModelTests.swift */,
+				BEB504D51F93C6A40005D3C3 /* AccountViewModelTests.swift */,
 			);
 			path = "Amaysim-ExamTests";
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				BE57F9971F9372A30052DD0E /* AppCoordinator.swift in Sources */,
 				BE3AAF0D1F937B8D00D50B9D /* Result.swift in Sources */,
 				BE3AAF1B1F937E7F00D50B9D /* Protocols.swift in Sources */,
+				BEB504D61F93C6A40005D3C3 /* AccountViewModelTests.swift in Sources */,
 				BE3AAF481F939FD600D50B9D /* SplashScreenViewController.swift in Sources */,
 				BEB504D11F93C4490005D3C3 /* AccountViewModel.swift in Sources */,
 				BE3AAF4C1F93A0FC00D50B9D /* SplashViewModel.swift in Sources */,
