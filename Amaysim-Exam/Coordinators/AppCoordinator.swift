@@ -74,6 +74,7 @@ class AppCoordinator: Coordinator {
 
     func createAccountViewController() -> AccountViewController {
         let accountViewController = self.storyboard.instantiateViewController(withIdentifier: "Account") as! AccountViewController
+        accountViewController.accountViewModel = AccountViewModel(accountDocument: self.accountDocument!)
         return accountViewController
     }
 

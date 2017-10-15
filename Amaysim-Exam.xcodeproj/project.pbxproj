@@ -48,6 +48,7 @@
 		BE57F99A1F9377AF0052DD0E /* LoginModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F9991F9377AF0052DD0E /* LoginModuleInterface.swift */; };
 		BE57F99B1F9377AF0052DD0E /* LoginModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F9991F9377AF0052DD0E /* LoginModuleInterface.swift */; };
 		BEB504C81F93ABE10005D3C3 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB504C71F93ABE10005D3C3 /* AccountViewController.swift */; };
+		BEB504CB1F93B5A30005D3C3 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEB504CA1F93B5A30005D3C3 /* AccountViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		BE57F9951F9372A30052DD0E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		BE57F9991F9377AF0052DD0E /* LoginModuleInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModuleInterface.swift; sourceTree = "<group>"; };
 		BEB504C71F93ABE10005D3C3 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		BEB504CA1F93B5A30005D3C3 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				BEB504C61F93AB8A0005D3C3 /* View */,
+				BEB504C91F93B5720005D3C3 /* View Model */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -291,6 +294,14 @@
 				BEB504C71F93ABE10005D3C3 /* AccountViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BEB504C91F93B5720005D3C3 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				BEB504CA1F93B5A30005D3C3 /* AccountViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -409,6 +420,7 @@
 				BE57F9961F9372A30052DD0E /* AppCoordinator.swift in Sources */,
 				BEB504C81F93ABE10005D3C3 /* AccountViewController.swift in Sources */,
 				BE3AAF0C1F937B8D00D50B9D /* Result.swift in Sources */,
+				BEB504CB1F93B5A30005D3C3 /* AccountViewModel.swift in Sources */,
 				BE3AAF1A1F937E7F00D50B9D /* Protocols.swift in Sources */,
 				BE3AAF471F939FD600D50B9D /* SplashScreenViewController.swift in Sources */,
 				BE3AAF4B1F93A0FC00D50B9D /* SplashViewModel.swift in Sources */,
