@@ -36,6 +36,7 @@
 		BE01320B1F9231F800F9019B /* Amaysim-ExamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Amaysim-ExamTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE01320F1F9231F800F9019B /* Amaysim_ExamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amaysim_ExamTests.swift; sourceTree = "<group>"; };
 		BE0132111F9231F800F9019B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE57F95F1F9363990052DD0E /* collection.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = collection.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 			children = (
 				BE0131FA1F9231F800F9019B /* AppDelegate.swift */,
 				BE0131FC1F9231F800F9019B /* ViewController.swift */,
+				BE57F95E1F93621A0052DD0E /* Resources */,
 				BE0131FE1F9231F800F9019B /* Main.storyboard */,
 				BE0132011F9231F800F9019B /* Assets.xcassets */,
 				BE0132031F9231F800F9019B /* LaunchScreen.storyboard */,
@@ -94,6 +96,14 @@
 				BE0132111F9231F800F9019B /* Info.plist */,
 			);
 			path = "Amaysim-ExamTests";
+			sourceTree = "<group>";
+		};
+		BE57F95E1F93621A0052DD0E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BE57F95F1F9363990052DD0E /* collection.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
