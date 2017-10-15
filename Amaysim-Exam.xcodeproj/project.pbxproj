@@ -13,6 +13,16 @@
 		BE0132021F9231F800F9019B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE0132011F9231F800F9019B /* Assets.xcassets */; };
 		BE0132051F9231F800F9019B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE0132031F9231F800F9019B /* LaunchScreen.storyboard */; };
 		BE0132101F9231F800F9019B /* Amaysim_ExamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE01320F1F9231F800F9019B /* Amaysim_ExamTests.swift */; };
+		BE57F9621F9364260052DD0E /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F9611F9364260052DD0E /* Account.swift */; };
+		BE57F9631F9364260052DD0E /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F9611F9364260052DD0E /* Account.swift */; };
+		BE57F9651F9364520052DD0E /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F9641F9364520052DD0E /* Service.swift */; };
+		BE57F9661F9364520052DD0E /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F9641F9364520052DD0E /* Service.swift */; };
+		BE57F9681F93646C0052DD0E /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F9671F93646C0052DD0E /* Subscription.swift */; };
+		BE57F9691F93646C0052DD0E /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F9671F93646C0052DD0E /* Subscription.swift */; };
+		BE57F96B1F93649A0052DD0E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F96A1F93649A0052DD0E /* Product.swift */; };
+		BE57F96C1F93649A0052DD0E /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F96A1F93649A0052DD0E /* Product.swift */; };
+		BE57F96E1F9364B30052DD0E /* AccountDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F96D1F9364B30052DD0E /* AccountDocument.swift */; };
+		BE57F96F1F9364B30052DD0E /* AccountDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE57F96D1F9364B30052DD0E /* AccountDocument.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +47,11 @@
 		BE01320F1F9231F800F9019B /* Amaysim_ExamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amaysim_ExamTests.swift; sourceTree = "<group>"; };
 		BE0132111F9231F800F9019B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE57F95F1F9363990052DD0E /* collection.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = collection.json; sourceTree = "<group>"; };
+		BE57F9611F9364260052DD0E /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		BE57F9641F9364520052DD0E /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		BE57F9671F93646C0052DD0E /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		BE57F96A1F93649A0052DD0E /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		BE57F96D1F9364B30052DD0E /* AccountDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDocument.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +95,7 @@
 			children = (
 				BE0131FA1F9231F800F9019B /* AppDelegate.swift */,
 				BE0131FC1F9231F800F9019B /* ViewController.swift */,
+				BE57F9601F9363E20052DD0E /* Models */,
 				BE57F95E1F93621A0052DD0E /* Resources */,
 				BE0131FE1F9231F800F9019B /* Main.storyboard */,
 				BE0132011F9231F800F9019B /* Assets.xcassets */,
@@ -104,6 +120,18 @@
 				BE57F95F1F9363990052DD0E /* collection.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		BE57F9601F9363E20052DD0E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BE57F9611F9364260052DD0E /* Account.swift */,
+				BE57F9641F9364520052DD0E /* Service.swift */,
+				BE57F9671F93646C0052DD0E /* Subscription.swift */,
+				BE57F96A1F93649A0052DD0E /* Product.swift */,
+				BE57F96D1F9364B30052DD0E /* AccountDocument.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +238,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE0131FD1F9231F800F9019B /* ViewController.swift in Sources */,
+				BE57F96E1F9364B30052DD0E /* AccountDocument.swift in Sources */,
+				BE57F9651F9364520052DD0E /* Service.swift in Sources */,
 				BE0131FB1F9231F800F9019B /* AppDelegate.swift in Sources */,
+				BE57F9621F9364260052DD0E /* Account.swift in Sources */,
+				BE57F9681F93646C0052DD0E /* Subscription.swift in Sources */,
+				BE57F96B1F93649A0052DD0E /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +252,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE0132101F9231F800F9019B /* Amaysim_ExamTests.swift in Sources */,
+				BE57F9631F9364260052DD0E /* Account.swift in Sources */,
+				BE57F96C1F93649A0052DD0E /* Product.swift in Sources */,
+				BE57F9691F93646C0052DD0E /* Subscription.swift in Sources */,
+				BE57F96F1F9364B30052DD0E /* AccountDocument.swift in Sources */,
+				BE57F9661F9364520052DD0E /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
