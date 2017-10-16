@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, LoginPresenterOutputInterface {
+class LoginViewController: UIViewController, LoginPresenterOutputInterface, UITextFieldDelegate {
 
     var didLoginWithAccount: ((AccountDocument) -> ())?
 
@@ -38,6 +38,11 @@ class LoginViewController: UIViewController, LoginPresenterOutputInterface {
 
     func presentErrorAlert(alert: UIAlertController) {
         self.present(alert, animated: true, completion: nil)
+    }
+
+    @objc func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
     }
     
 }
